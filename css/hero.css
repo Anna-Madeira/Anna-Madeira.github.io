@@ -134,6 +134,7 @@
   font-size: 0.85rem;
   line-height: 1.85;
   overflow-x: auto;
+  white-space: pre;
 }
 
 .code-card .c-key { color: #f9a8d4; }
@@ -142,8 +143,27 @@
 .code-card .c-kw { color: #8b5cf6; }
 .code-card .c-fn { color: #7dd3fc; }
 
+.typewriter-cursor {
+  color: var(--color-accent);
+  animation: cursor-blink 0.9s step-end infinite;
+}
+
+@keyframes cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 @media (max-width: 900px) {
   .hero .container {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .code-card pre {
+    padding: 1.1rem 1.1rem;
+    font-size: 0.72rem;
+    line-height: 1.7;
   }
 }
