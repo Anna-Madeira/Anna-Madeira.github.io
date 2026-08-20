@@ -26,12 +26,12 @@
               <li><a href="#projetos">Projetos</a></li>
               <li><a href="#contato">Contato</a></li>
               <li>
-                <a class="nav-cta" href="https://anna-madeira.github.io/curriculo/" target="_blank" rel="noopener">
+                <button class="nav-cta" type="button" data-open-resume>
                   Currículo
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M7 17L17 7M8 7h9v9" />
                   </svg>
-                </a>
+                </button>
               </li>
             </ul>
           </nav>
@@ -53,7 +53,7 @@
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#projetos">Ver projetos</a>
-            <a class="button button-outline" href="https://anna-madeira.github.io/curriculo/" target="_blank" rel="noopener">Currículo completo</a>
+            <button class="button button-outline" type="button" data-open-resume>Currículo completo</button>
           </div>
           <div class="social-row">
             <a href="https://github.com/Anna-Madeira" target="_blank" rel="noopener" aria-label="GitHub">
@@ -369,6 +369,32 @@
       </div>
     </footer>
 
+    <div class="resume-modal" id="resume-modal" role="dialog" aria-modal="true" aria-label="Currículo de Anna Madeira">
+      <div class="resume-modal-panel">
+        <div class="resume-modal-topbar">
+          <span>curriculo.anna.dev</span>
+          <div class="resume-modal-actions">
+            <a href="https://anna-madeira.github.io/curriculo/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M8 7h9v9" />
+              </svg>
+              Abrir em nova aba
+            </a>
+            <button type="button" data-close-resume aria-label="Fechar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 6l12 12M18 6L6 18" />
+              </svg>
+              Fechar
+            </button>
+          </div>
+        </div>
+        <div class="resume-modal-body">
+          <iframe data-resume-frame title="Currículo de Anna Madeira"></iframe>
+        </div>
+      </div>
+    </div>
+
     <script src="js/menu.js"></script>
+    <script src="js/resume-modal.js"></script>
   </body>
 </html>
