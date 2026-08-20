@@ -1,0 +1,23 @@
+:root {
+  --color-bg: #0b0b12;
+  --color-bg-elevated: #14141f;
+  --color-bg-elevated-2: #1b1b29;
+  --color-border: rgba(255, 255, 255, 0.09);
+  --color-text: #f4f2f8;
+  --color-text-muted: #a6a3b8;
+  --color-accent: #ec4899;
+  --color-accent-soft: #f9a8d4;
+  --color-accent-2: #8b5cf6;
+  --color-success: #34d399;
+
+  --font-heading: "Poppins", "Segoe UI", sans-serif;
+  --font-body: "Inter", "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  --container-width: 1140px;
+  --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.35);
+}

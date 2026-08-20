@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Anna Madeira — desenvolvedora front-end júnior. Portfólio com projetos em HTML, CSS, JavaScript e React."
+    />
+    <title>Anna Madeira — Desenvolvedora Front-end</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a class="logo" href="#home">anna<span>.dev</span></a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 6h18M3 12h18M3 18h18" />
+          </svg>
+        </button>
+        <div class="navigation-menu">
+          <nav>
+            <ul class="nav-list">
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#contato">Contato</a></li>
+              <li>
+                <a class="nav-cta" href="https://curriculo-portfolio-topaz.vercel.app" target="_blank" rel="noopener">
+                  Currículo
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M8 7h9v9" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <span class="kicker">// desenvolvedora front-end</span>
+          <h1>Olá, eu sou <span class="accent">Anna Madeira</span></h1>
+          <h2>Desenvolvedora Front-end Jr.</h2>
+          <p class="lead">
+            Estou em transição de carreira para o front-end, com uma base sólida em análise de
+            sistemas e metodologias ágeis. Gosto de transformar interfaces complexas em
+            experiências simples, acessíveis e bem construídas.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projetos">Ver projetos</a>
+            <a class="button button-outline" href="https://curriculo-portfolio-topaz.vercel.app" target="_blank" rel="noopener">Currículo completo</a>
+          </div>
+          <div class="social-row">
+            <a href="https://github.com/Anna-Madeira" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.6 2.8 5.5 3.1 5.5 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" />
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/anna-madeira" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="3" width="18" height="18" rx="3" />
+                <path d="M7.5 10v6.5M7.5 7.2v.1M12 16.5V13c0-1.5 1-3 3-3s3 1.5 3 3v3.5" />
+              </svg>
+            </a>
+            <a href="mailto:anna.madeira@icloud.com" aria-label="E-mail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="M3 7l9 6 9-6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="code-card">
+          <div class="code-topbar">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="code-filename">anna.js</span>
+          </div>
+          <pre><span class="c-kw">const</span> <span class="c-fn">anna</span> <span class="c-punct">=</span> <span class="c-punct">{</span>
+  <span class="c-key">role</span><span class="c-punct">:</span> <span class="c-str">'Frontend Developer Jr.'</span><span class="c-punct">,</span>
+  <span class="c-key">stack</span><span class="c-punct">:</span> <span class="c-punct">[</span><span class="c-str">'React'</span><span class="c-punct">,</span> <span class="c-str">'TypeScript'</span><span class="c-punct">,</span> <span class="c-str">'JavaScript'</span><span class="c-punct">]</span><span class="c-punct">,</span>
+  <span class="c-key">location</span><span class="c-punct">:</span> <span class="c-str">'São Paulo, BR'</span><span class="c-punct">,</span>
+  <span class="c-key">openToWork</span><span class="c-punct">:</span> <span class="c-kw">true</span><span class="c-punct">,</span>
+<span class="c-punct">}</span><span class="c-punct">;</span></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="kicker">// sobre mim</span>
+            <h2>Da análise de sistemas ao front-end</h2>
+            <p>
+              Comecei minha carreira em tecnologia como Analista de Sistemas e Analista de
+              Configuração, fazendo a ponte entre áreas de negócio e times de desenvolvimento.
+              Isso me deu uma base sólida em metodologias ágeis (Scrum, Kanban) e SQL — que uso
+              até hoje pra entender o problema antes de sair escrevendo código.
+            </p>
+            <p>
+              Hoje foco em construir interfaces com HTML, CSS, JavaScript e React, sempre
+              buscando código organizado, acessível e fácil de manter.
+            </p>
+            <div class="about-facts">
+              <div class="fact">
+                <span>Formação</span>
+                <strong>Tecnologia em ADS — Uninove</strong>
+              </div>
+              <div class="fact">
+                <span>Localização</span>
+                <strong>São Paulo, SP</strong>
+              </div>
+              <div class="fact">
+                <span>Foco atual</span>
+                <strong>React &amp; TypeScript</strong>
+              </div>
+              <div class="fact">
+                <span>Disponibilidade</span>
+                <strong>Aberta a oportunidades</strong>
+              </div>
+            </div>
+          </div>
+          <div class="skills-panel">
+            <h3>Stack &amp; ferramentas</h3>
+            <div class="skills-list">
+              <span class="tag">React.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Git &amp; GitHub</span>
+              <span class="tag">Metodologias Ágeis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <div class="container">
+        <div class="section-title">
+          <span class="kicker">// projetos</span>
+          <h2>Alguns projetos recentes</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-mock mock-destino">
+              <div class="mock-topbar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="mock-url">destino-livre</span>
+              </div>
+              <div class="mock-body">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M15 9l-2 5-5 2 2-5 5-2z" fill="currentColor" stroke="none" />
+                </svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Destino Livre</h3>
+              <p>Landing page responsiva de uma agência de viagens fictícia, com catálogo de pacotes filtrável e formulários com feedback visual.</p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Anna-Madeira/destino-livre" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.6 2.8 5.5 3.1 5.5 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" />
+                  </svg>
+                  Código
+                </a>
+                <a href="https://anna-madeira.github.io/destino-livre/" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M7 17L17 7M8 7h9v9" />
+                  </svg>
+                  Ver online
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-mock mock-hermex">
+              <div class="mock-topbar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="mock-url">hermex</span>
+              </div>
+              <div class="mock-body">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 16V11l1.6-4.3A2 2 0 017.5 5.5h9a2 2 0 011.9 1.2L20 11v5" />
+                  <path d="M4 16h16v2.5a1 1 0 01-1 1h-1a1 1 0 01-1-1V17H7v1.5a1 1 0 01-1 1H5a1 1 0 01-1-1V16z" />
+                  <circle cx="7.5" cy="13.5" r="1.2" />
+                  <circle cx="16.5" cy="13.5" r="1.2" />
+                </svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Hermex</h3>
+              <p>Interface de uma locadora de veículos, com catálogo, detalhes do carro e fluxo de reserva, construída em React.</p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">CSS3</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Anna-Madeira/hermex" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.6 2.8 5.5 3.1 5.5 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" />
+                  </svg>
+                  Código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-mock mock-advocacia">
+              <div class="mock-topbar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="mock-url">madeira-advocacia</span>
+              </div>
+              <div class="mock-body">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 3v18M5 8l-3 5a3 3 0 006 0zM19 8l-3 5a3 3 0 006 0z" />
+                  <path d="M5 8h14M8 21h8" />
+                </svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Madeira Advocacia</h3>
+              <p>Site institucional para um escritório de advocacia, com apresentação de áreas de atuação e contato.</p>
+              <div class="project-tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Next.js</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Anna-Madeira/madeira-advocacia" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.6 2.8 5.5 3.1 5.5 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" />
+                  </svg>
+                  Código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-mock mock-weather">
+              <div class="mock-topbar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="mock-url">weather-project</span>
+              </div>
+              <div class="mock-body">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="8" cy="8" r="3" />
+                  <path d="M8 2v1M8 13v1M2 8h1M13 8h1M4 4l.7.7M11.3 4l-.7.7" />
+                  <path d="M9 16.5a3.5 3.5 0 013.4-3.5 4 4 0 017.6 1.7 3 3 0 01-.5 6H9a3 3 0 010-4.2z" />
+                </svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Weather Project</h3>
+              <p>Aplicação de previsão do tempo consumindo uma API pública, construída com JavaScript e Vite.</p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Vite</span>
+                <span class="tag">API REST</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Anna-Madeira/weather-project" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.6 2.8 5.5 3.1 5.5 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" />
+                  </svg>
+                  Código
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="projects-more">
+          Mais projetos no <a href="https://github.com/Anna-Madeira" target="_blank" rel="noopener">GitHub</a>.
+        </p>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container">
+        <div class="contact-panel">
+          <span class="kicker">// vamos conversar</span>
+          <h2>Bora trocar uma ideia?</h2>
+          <p>Estou aberta a oportunidades como desenvolvedora front-end júnior. Manda um e-mail ou chama no LinkedIn.</p>
+          <div class="contact-links">
+            <a href="mailto:anna.madeira@icloud.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="M3 7l9 6 9-6" />
+              </svg>
+              anna.madeira@icloud.com
+            </a>
+            <a href="https://linkedin.com/in/anna-madeira" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="3" width="18" height="18" rx="3" />
+                <path d="M7.5 10v6.5M7.5 7.2v.1M12 16.5V13c0-1.5 1-3 3-3s3 1.5 3 3v3.5" />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/Anna-Madeira" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.6 2.8 5.5 3.1 5.5 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="container">
+        <p>© 2026 Anna Madeira. Feito com HTML, CSS e JavaScript puro.</p>
+        <div class="social-row">
+          <a href="https://github.com/Anna-Madeira" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.6 2.8 5.5 3.1 5.5 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" />
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/anna-madeira" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="3" />
+              <path d="M7.5 10v6.5M7.5 7.2v.1M12 16.5V13c0-1.5 1-3 3-3s3 1.5 3 3v3.5" />
+            </svg>
+          </a>
+          <a href="mailto:anna.madeira@icloud.com" aria-label="E-mail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="M3 7l9 6 9-6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+  </body>
+</html>

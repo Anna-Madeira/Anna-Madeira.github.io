@@ -1,0 +1,27 @@
+.main-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 2.2rem 0;
+}
+
+.main-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.main-footer p {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.main-footer .social-row a {
+  width: 36px;
+  height: 36px;
+}
+
+.main-footer .social-row svg {
+  width: 15px;
+  height: 15px;
+}
